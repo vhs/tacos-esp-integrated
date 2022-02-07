@@ -31,13 +31,13 @@ void lockoutLoop()
         }
 
         // Get state from the data
-        int tool_armed = (int)jsonDoc["state"]["powered"];
-        Serial.printf("LOG: New tool power status: %i\n", (int)jsonDoc["state"]["powered"]);
+        int tool_armed = (int)jsonDoc["armed"];
+        Serial.printf("LOG: New tool power status: %i\n", (int)jsonDoc["armed"]);
 
         // Switch on, else set error
         if (tool_armed == 1)
         {
-            setState(STATE_TOOL_ON);
+            setState(STATE_TOOL_ARMED);
             return;
         }
         else
@@ -55,7 +55,7 @@ void lockoutLoop()
             return;
         }
 
-        setState(STATE_TOOL_OFF);
+        setState(STATE_TOOL_SAFE);
         return;
     }
 

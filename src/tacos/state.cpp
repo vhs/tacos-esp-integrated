@@ -53,17 +53,16 @@ void applyState(unsigned long max_delay)
             Serial.printf("STATE: Primed\n");
             ledMultiBlink(STATUS_PIN, 3, 125);
             break;
-        case STATE_POWERED:
-        case STATE_TOOL_ON:
+        case STATE_TOOL_ARMED:
             setErrorLedOff();
-            ledMultiBlink(STATUS_PIN);
+            ledMultiBlink(STATUS_PIN, 3, 125);
             unsetBlockRetry();
             setStatusLedOn();
             setToolArmed();
             setToolOn();
             Serial.printf("NOTICE: Tool enabled\n");
             break;
-        case STATE_TOOL_OFF:
+        case STATE_TOOL_SAFE:
             setPowerOff();
             setStatusLedOff();
             setErrorLedOff();
