@@ -1,3 +1,0 @@
-(fp_lib_table
-  (lib (name TACOS-ESP-Integrated)(type KiCad)(uri ${KIPRJMOD}/TACOS-ESP-Integrated.pretty)(options "")(descr ""))
-)
