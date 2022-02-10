@@ -20,7 +20,7 @@ L Device:LED D3
 U 1 1 5F2889AC
 P 7800 3250
 F 0 "D3" H 7793 3467 50  0000 C CNN
-F 1 "POWER LED" H 7793 3376 50  0000 C CNN
+F 1 "Power LED" H 7793 3376 50  0000 C CNN
 F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 7800 3250 50  0001 C CNN
 F 3 "~" H 7800 3250 50  0001 C CNN
 	1    7800 3250
@@ -161,15 +161,15 @@ POWER_NET
 $Comp
 L Device:R R10
 U 1 1 61E86BF4
-P 9400 3600
-F 0 "R10" V 9607 3600 50  0000 C CNN
-F 1 "R?" V 9516 3600 50  0000 C CNN
-F 2 "Resistor_THT:R_Bare_Metal_Element_L12.4mm_W4.8mm_P11.40mm" V 9330 3600 50  0001 C CNN
-F 3 "~" H 9400 3600 50  0001 C CNN
-	1    9400 3600
+P 9550 3600
+F 0 "R10" V 9757 3600 50  0000 C CNN
+F 1 "R4.7K" V 9666 3600 50  0000 C CNN
+F 2 "Resistor_THT:R_Bare_Metal_Element_L12.4mm_W4.8mm_P11.40mm" V 9480 3600 50  0001 C CNN
+F 3 "~" H 9550 3600 50  0001 C CNN
+	1    9550 3600
 	0    1    1    0   
 $EndComp
-Text GLabel 10000 4100 3    50   Input ~ 0
+Text GLabel 10000 3800 3    50   Input ~ 0
 GND
 $Comp
 L Transistor_BJT:PN2222A Q2
@@ -184,14 +184,14 @@ F 3 "http://www.fairchildsemi.com/ds/PN/PN2222A.pdf" H 9900 3600 50  0001 L CNN
 $EndComp
 Text GLabel 10000 2950 1    50   Input ~ 0
 5V
-Text GLabel 9000 3600 0    50   Input ~ 0
+Text GLabel 9400 3600 0    50   Input ~ 0
 POWER_NET
 $Comp
 L Connector:Screw_Terminal_01x02 J1
 U 1 1 61E88185
 P 9800 3200
 F 0 "J1" V 9672 3280 50  0000 L CNN
-F 1 "Relay" V 9763 3280 50  0000 L CNN
+F 1 "Power Relay" V 9921 2953 50  0000 L CNN
 F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 9800 3200 50  0001 C CNN
 F 3 "~" H 9800 3200 50  0001 C CNN
 	1    9800 3200
@@ -206,7 +206,7 @@ L Device:LED D2
 U 1 1 61E9BA62
 P 7800 1450
 F 0 "D2" H 7793 1667 50  0000 C CNN
-F 1 "POWER LED" H 7793 1576 50  0000 C CNN
+F 1 "Error LED" H 7793 1576 50  0000 C CNN
 F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 7800 1450 50  0001 C CNN
 F 3 "~" H 7800 1450 50  0001 C CNN
 	1    7800 1450
@@ -241,52 +241,30 @@ Text GLabel 7800 1000 1    50   Input ~ 0
 $Comp
 L Device:R R11
 U 1 1 61E9BA78
-P 9400 1800
-F 0 "R11" V 9607 1800 50  0000 C CNN
-F 1 "R4.7K" V 9516 1800 50  0000 C CNN
-F 2 "Resistor_THT:R_Bare_Metal_Element_L12.4mm_W4.8mm_P11.40mm" V 9330 1800 50  0001 C CNN
-F 3 "~" H 9400 1800 50  0001 C CNN
-	1    9400 1800
+P 9550 1800
+F 0 "R11" V 9757 1800 50  0000 C CNN
+F 1 "R4.7K" V 9666 1800 50  0000 C CNN
+F 2 "Resistor_THT:R_Bare_Metal_Element_L12.4mm_W4.8mm_P11.40mm" V 9480 1800 50  0001 C CNN
+F 3 "~" H 9550 1800 50  0001 C CNN
+	1    9550 1800
 	0    1    1    0   
 $EndComp
-Text GLabel 10000 2300 3    50   Input ~ 0
+Text GLabel 10000 2000 3    50   Input ~ 0
 GND
-$Comp
-L Transistor_BJT:PN2222A Q4
-U 1 1 61E9BA7F
-P 9900 1800
-F 0 "Q4" H 10090 1846 50  0000 L CNN
-F 1 "PN2222A" H 10090 1755 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 10100 1725 50  0001 L CIN
-F 3 "http://www.fairchildsemi.com/ds/PN/PN2222A.pdf" H 9900 1800 50  0001 L CNN
-	1    9900 1800
-	1    0    0    -1  
-$EndComp
 Text GLabel 10000 1150 1    50   Input ~ 0
 5V
-$Comp
-L Connector:Screw_Terminal_01x02 J3
-U 1 1 61E9BA87
-P 9800 1400
-F 0 "J3" V 9672 1480 50  0000 L CNN
-F 1 "Relay" V 9763 1480 50  0000 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 9800 1400 50  0001 C CNN
-F 3 "~" H 9800 1400 50  0001 C CNN
-	1    9800 1400
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	10000 1300 10000 1200
 Wire Wire Line
 	10000 1400 10000 1500
-Text GLabel 9000 1800 0    50   Input ~ 0
+Text GLabel 9400 1800 0    50   Input ~ 0
 ERROR_NET
 $Comp
 L Device:LED D4
 U 1 1 62026746
 P 2550 3500
 F 0 "D4" H 2543 3717 50  0000 C CNN
-F 1 "POWER LED" H 2543 3626 50  0000 C CNN
+F 1 "Status LED" H 2543 3626 50  0000 C CNN
 F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 2550 3500 50  0001 C CNN
 F 3 "~" H 2550 3500 50  0001 C CNN
 	1    2550 3500
@@ -432,12 +410,12 @@ $EndComp
 Text GLabel 4700 2750 2    50   Input ~ 0
 GND
 $Comp
-L Device:D D?
+L Device:D D5
 U 1 1 6204AA11
 P 10200 1350
-F 0 "D?" V 10154 1430 50  0000 L CNN
+F 0 "D5" V 10154 1430 50  0000 L CNN
 F 1 "D" V 10245 1430 50  0000 L CNN
-F 2 "" H 10200 1350 50  0001 C CNN
+F 2 "Diode_SMD:D_0603_1608Metric" H 10200 1350 50  0001 C CNN
 F 3 "~" H 10200 1350 50  0001 C CNN
 	1    10200 1350
 	0    1    1    0   
@@ -453,12 +431,12 @@ Connection ~ 10000 1500
 Wire Wire Line
 	10000 1500 10000 1600
 $Comp
-L Device:D D?
+L Device:D D6
 U 1 1 6204CEAC
 P 10200 3150
-F 0 "D?" V 10154 3230 50  0000 L CNN
+F 0 "D6" V 10154 3230 50  0000 L CNN
 F 1 "D" V 10245 3230 50  0000 L CNN
-F 2 "" H 10200 3150 50  0001 C CNN
+F 2 "Diode_SMD:D_0603_1608Metric" H 10200 3150 50  0001 C CNN
 F 3 "~" H 10200 3150 50  0001 C CNN
 	1    10200 3150
 	0    1    1    0   
@@ -467,29 +445,17 @@ Wire Wire Line
 	10200 3000 10000 3000
 Wire Wire Line
 	10200 3300 10000 3300
-Wire Wire Line
-	9550 1800 9700 1800
-Wire Wire Line
-	9250 1800 9000 1800
-Wire Wire Line
-	10000 2000 10000 2300
 Connection ~ 10000 3000
 Wire Wire Line
 	10000 3000 10000 2950
 Connection ~ 10000 3300
 Wire Wire Line
 	10000 3300 10000 3400
-Wire Wire Line
-	9700 3600 9550 3600
-Wire Wire Line
-	9250 3600 9000 3600
-Wire Wire Line
-	10000 4100 10000 3800
 $Comp
-L Device:R R?
+L Device:R R14
 U 1 1 62067CD1
 P 7350 1800
-F 0 "R?" V 7557 1800 50  0000 C CNN
+F 0 "R14" V 7557 1800 50  0000 C CNN
 F 1 "R1K" V 7466 1800 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 7280 1800 50  0001 C CNN
 F 3 "~" H 7350 1800 50  0001 C CNN
@@ -497,10 +463,10 @@ F 3 "~" H 7350 1800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R15
 U 1 1 6206B9F4
 P 7350 3600
-F 0 "R?" V 7557 3600 50  0000 C CNN
+F 0 "R15" V 7557 3600 50  0000 C CNN
 F 1 "R1K" V 7466 3600 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 7280 3600 50  0001 C CNN
 F 3 "~" H 7350 3600 50  0001 C CNN
@@ -508,14 +474,36 @@ F 3 "~" H 7350 3600 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R13
 U 1 1 62071776
 P 2550 3200
-F 0 "R?" V 2757 3200 50  0000 C CNN
+F 0 "R13" V 2757 3200 50  0000 C CNN
 F 1 "R330" V 2666 3200 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 2480 3200 50  0001 C CNN
 F 3 "~" H 2550 3200 50  0001 C CNN
 	1    2550 3200
 	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:PN2222A Q4
+U 1 1 61E9BA7F
+P 9900 1800
+F 0 "Q4" H 10090 1846 50  0000 L CNN
+F 1 "PN2222A" H 10090 1755 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 10100 1725 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/PN/PN2222A.pdf" H 9900 1800 50  0001 L CNN
+	1    9900 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J3
+U 1 1 61E9BA87
+P 9800 1400
+F 0 "J3" V 9672 1480 50  0000 L CNN
+F 1 "Error Relay" V 9921 1378 50  0000 C TNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 9800 1400 50  0001 C CNN
+F 3 "~" H 9800 1400 50  0001 C CNN
+	1    9800 1400
+	-1   0    0    1   
 $EndComp
 $EndSCHEMATC
