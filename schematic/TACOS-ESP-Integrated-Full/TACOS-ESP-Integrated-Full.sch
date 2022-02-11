@@ -39,8 +39,6 @@ F 3 "~" H 7800 2950 50  0001 C CNN
 $EndComp
 Text GLabel 7200 1800 0    50   Input ~ 0
 ERROR_NET
-Text GLabel 7800 3800 3    50   Input ~ 0
-GND
 $Comp
 L Connector_Generic:Conn_01x08 J2
 U 1 1 5F285F64
@@ -154,8 +152,6 @@ F 3 "http://www.fairchildsemi.com/ds/PN/PN2222A.pdf" H 7700 3600 50  0001 L CNN
 	1    7700 3600
 	1    0    0    -1  
 $EndComp
-Text GLabel 7800 2800 1    50   Input ~ 0
-5V
 Text GLabel 7200 3600 0    50   Input ~ 0
 POWER_NET
 $Comp
@@ -169,8 +165,6 @@ F 3 "~" H 9550 3600 50  0001 C CNN
 	1    9550 3600
 	0    1    1    0   
 $EndComp
-Text GLabel 10000 3800 3    50   Input ~ 0
-GND
 $Comp
 L Transistor_BJT:PN2222A Q2
 U 1 1 61E86BFC
@@ -182,8 +176,6 @@ F 3 "http://www.fairchildsemi.com/ds/PN/PN2222A.pdf" H 9900 3600 50  0001 L CNN
 	1    9900 3600
 	1    0    0    -1  
 $EndComp
-Text GLabel 10000 2950 1    50   Input ~ 0
-5V
 Text GLabel 9400 3600 0    50   Input ~ 0
 POWER_NET
 $Comp
@@ -223,8 +215,6 @@ F 3 "~" H 7800 1150 50  0001 C CNN
 	1    7800 1150
 	1    0    0    -1  
 $EndComp
-Text GLabel 7800 2000 3    50   Input ~ 0
-GND
 $Comp
 L Transistor_BJT:PN2222A Q3
 U 1 1 61E9BA70
@@ -236,8 +226,6 @@ F 3 "http://www.fairchildsemi.com/ds/PN/PN2222A.pdf" H 7700 1800 50  0001 L CNN
 	1    7700 1800
 	1    0    0    -1  
 $EndComp
-Text GLabel 7800 1000 1    50   Input ~ 0
-5V
 $Comp
 L Device:R R11
 U 1 1 61E9BA78
@@ -249,10 +237,6 @@ F 3 "~" H 9550 1800 50  0001 C CNN
 	1    9550 1800
 	0    1    1    0   
 $EndComp
-Text GLabel 10000 2000 3    50   Input ~ 0
-GND
-Text GLabel 10000 1150 1    50   Input ~ 0
-5V
 Wire Wire Line
 	10000 1300 10000 1200
 Wire Wire Line
@@ -281,8 +265,6 @@ F 3 "~" H 2100 3850 50  0001 C CNN
 	1    2100 3850
 	0    1    1    0   
 $EndComp
-Text GLabel 2550 4050 3    50   Input ~ 0
-GND
 $Comp
 L Transistor_BJT:PN2222A Q5
 U 1 1 62026754
@@ -294,24 +276,18 @@ F 3 "http://www.fairchildsemi.com/ds/PN/PN2222A.pdf" H 2450 3850 50  0001 L CNN
 	1    2450 3850
 	1    0    0    -1  
 $EndComp
-Text GLabel 2550 3050 1    50   Input ~ 0
-5V
 Text GLabel 1950 3850 0    50   Input ~ 0
 STATUS_NET
-Text GLabel 1250 3250 0    50   Input ~ 0
-GND
-Text GLabel 1350 3250 2    50   Input ~ 0
-5V
 $Comp
 L Connector:Screw_Terminal_01x02 J4
 U 1 1 6207987B
-P 1250 3050
-F 0 "J4" V 1122 3130 50  0000 L CNN
-F 1 "Vin" V 1341 3130 50  0000 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 1250 3050 50  0001 C CNN
-F 3 "~" H 1250 3050 50  0001 C CNN
-	1    1250 3050
-	0    -1   -1   0   
+P 1200 2950
+F 0 "J4" V 1072 3030 50  0000 L CNN
+F 1 "Vin" V 1291 3030 50  0000 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 1200 2950 50  0001 C CNN
+F 3 "~" H 1200 2950 50  0001 C CNN
+	1    1200 2950
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:R R2
@@ -324,10 +300,6 @@ F 3 "~" H 1500 1600 50  0001 C CNN
 	1    1500 1600
 	1    0    0    -1  
 $EndComp
-Text GLabel 1500 1750 3    50   Input ~ 0
-GND
-Text GLabel 1500 1150 1    50   Input ~ 0
-5V
 $Comp
 L Device:LED D1
 U 1 1 6202F7AF
@@ -350,8 +322,6 @@ F 3 "~" H 2500 1550 50  0001 C CNN
 	1    2500 1550
 	0    -1   -1   0   
 $EndComp
-Text GLabel 2500 1750 3    50   Input ~ 0
-GND
 Text GLabel 2500 1350 1    50   Input ~ 0
 SWITCH
 Text GLabel 5100 1550 2    50   Input ~ 0
@@ -372,23 +342,6 @@ Text GLabel 5100 2050 2    50   Input ~ 0
 SCK
 Text GLabel 5100 1950 2    50   Input ~ 0
 STATUS_NET
-Text GLabel 4800 1150 2    50   Input ~ 0
-3V3
-Text GLabel 4600 1150 0    50   Input ~ 0
-5V
-$Comp
-L MCU_Module:WeMos_D1_mini U1
-U 1 1 5F3D9F6A
-P 4700 1950
-F 0 "U1" H 4700 1061 50  0000 C CNN
-F 1 "WeMos_D1_mini" H 4700 970 50  0000 C CNN
-F 2 "Module:WEMOS_D1_mini_light" H 4700 800 50  0001 C CNN
-F 3 "https://wiki.wemos.cc/products:d1:d1_mini#documentation" H 2850 800 50  0001 C CNN
-	1    4700 1950
-	1    0    0    -1  
-$EndComp
-Text GLabel 4700 2750 2    50   Input ~ 0
-GND
 $Comp
 L Device:D D5
 U 1 1 6204AA11
@@ -485,5 +438,214 @@ F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 9800 1400 50  0001 C CNN
 F 3 "~" H 9800 1400 50  0001 C CNN
 	1    9800 1400
 	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 6205FF23
+P 1500 1150
+F 0 "#PWR?" H 1500 1000 50  0001 C CNN
+F 1 "+5V" H 1515 1323 50  0000 C CNN
+F 2 "" H 1500 1150 50  0001 C CNN
+F 3 "" H 1500 1150 50  0001 C CNN
+	1    1500 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 620617AF
+P 1500 1750
+F 0 "#PWR?" H 1500 1500 50  0001 C CNN
+F 1 "GND" H 1505 1577 50  0000 C CNN
+F 2 "" H 1500 1750 50  0001 C CNN
+F 3 "" H 1500 1750 50  0001 C CNN
+	1    1500 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 62063010
+P 2500 1750
+F 0 "#PWR?" H 2500 1500 50  0001 C CNN
+F 1 "GND" H 2505 1577 50  0000 C CNN
+F 2 "" H 2500 1750 50  0001 C CNN
+F 3 "" H 2500 1750 50  0001 C CNN
+	1    2500 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 620639AC
+P 1400 2850
+F 0 "#PWR?" H 1400 2700 50  0001 C CNN
+F 1 "+5V" H 1415 3023 50  0000 C CNN
+F 2 "" H 1400 2850 50  0001 C CNN
+F 3 "" H 1400 2850 50  0001 C CNN
+	1    1400 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 6206466E
+P 4800 1150
+F 0 "#PWR?" H 4800 1000 50  0001 C CNN
+F 1 "+3V3" H 4815 1323 50  0000 C CNN
+F 2 "" H 4800 1150 50  0001 C CNN
+F 3 "" H 4800 1150 50  0001 C CNN
+	1    4800 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 620657E9
+P 1400 2950
+F 0 "#PWR?" H 1400 2700 50  0001 C CNN
+F 1 "GND" H 1405 2777 50  0000 C CNN
+F 2 "" H 1400 2950 50  0001 C CNN
+F 3 "" H 1400 2950 50  0001 C CNN
+	1    1400 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCU_Module:WeMos_D1_mini U1
+U 1 1 5F3D9F6A
+P 4700 1950
+F 0 "U1" H 4528 1181 50  0000 R CNN
+F 1 "WeMos_D1_mini" H 4528 1102 50  0000 R CNN
+F 2 "Module:WEMOS_D1_mini_light" H 4700 800 50  0001 C CNN
+F 3 "https://wiki.wemos.cc/products:d1:d1_mini#documentation" H 2850 800 50  0001 C CNN
+	1    4700 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 62069E6C
+P 2550 3050
+F 0 "#PWR?" H 2550 2900 50  0001 C CNN
+F 1 "+5V" H 2565 3223 50  0000 C CNN
+F 2 "" H 2550 3050 50  0001 C CNN
+F 3 "" H 2550 3050 50  0001 C CNN
+	1    2550 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 6206A298
+P 4600 1150
+F 0 "#PWR?" H 4600 1000 50  0001 C CNN
+F 1 "+5V" H 4615 1323 50  0000 C CNN
+F 2 "" H 4600 1150 50  0001 C CNN
+F 3 "" H 4600 1150 50  0001 C CNN
+	1    4600 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 6206A74E
+P 7800 2800
+F 0 "#PWR?" H 7800 2650 50  0001 C CNN
+F 1 "+5V" H 7815 2973 50  0000 C CNN
+F 2 "" H 7800 2800 50  0001 C CNN
+F 3 "" H 7800 2800 50  0001 C CNN
+	1    7800 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 6206AD3F
+P 10000 2950
+F 0 "#PWR?" H 10000 2800 50  0001 C CNN
+F 1 "+5V" H 10015 3123 50  0000 C CNN
+F 2 "" H 10000 2950 50  0001 C CNN
+F 3 "" H 10000 2950 50  0001 C CNN
+	1    10000 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 6206B0B2
+P 10000 1150
+F 0 "#PWR?" H 10000 1000 50  0001 C CNN
+F 1 "+5V" H 10015 1323 50  0000 C CNN
+F 2 "" H 10000 1150 50  0001 C CNN
+F 3 "" H 10000 1150 50  0001 C CNN
+	1    10000 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 6206B656
+P 7800 1000
+F 0 "#PWR?" H 7800 850 50  0001 C CNN
+F 1 "+5V" H 7815 1173 50  0000 C CNN
+F 2 "" H 7800 1000 50  0001 C CNN
+F 3 "" H 7800 1000 50  0001 C CNN
+	1    7800 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6206BF18
+P 2550 4050
+F 0 "#PWR?" H 2550 3800 50  0001 C CNN
+F 1 "GND" H 2555 3877 50  0000 C CNN
+F 2 "" H 2550 4050 50  0001 C CNN
+F 3 "" H 2550 4050 50  0001 C CNN
+	1    2550 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6206C5E3
+P 10000 3800
+F 0 "#PWR?" H 10000 3550 50  0001 C CNN
+F 1 "GND" H 10005 3627 50  0000 C CNN
+F 2 "" H 10000 3800 50  0001 C CNN
+F 3 "" H 10000 3800 50  0001 C CNN
+	1    10000 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6206CEE4
+P 10000 2000
+F 0 "#PWR?" H 10000 1750 50  0001 C CNN
+F 1 "GND" H 10005 1827 50  0000 C CNN
+F 2 "" H 10000 2000 50  0001 C CNN
+F 3 "" H 10000 2000 50  0001 C CNN
+	1    10000 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6206D15B
+P 7800 2000
+F 0 "#PWR?" H 7800 1750 50  0001 C CNN
+F 1 "GND" H 7805 1827 50  0000 C CNN
+F 2 "" H 7800 2000 50  0001 C CNN
+F 3 "" H 7800 2000 50  0001 C CNN
+	1    7800 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6206D7A2
+P 4700 2750
+F 0 "#PWR?" H 4700 2500 50  0001 C CNN
+F 1 "GND" H 4705 2577 50  0000 C CNN
+F 2 "" H 4700 2750 50  0001 C CNN
+F 3 "" H 4700 2750 50  0001 C CNN
+	1    4700 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6206C1FD
+P 7800 3800
+F 0 "#PWR?" H 7800 3550 50  0001 C CNN
+F 1 "GND" H 7805 3627 50  0000 C CNN
+F 2 "" H 7800 3800 50  0001 C CNN
+F 3 "" H 7800 3800 50  0001 C CNN
+	1    7800 3800
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
