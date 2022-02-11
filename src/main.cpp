@@ -21,7 +21,7 @@ void setup()
 #ifdef BUTTON_MODE
     pinMode(BUTTON_PIN, BUTTON_MODE);
 #else
-    pinMode(BUTTON_PIN, INPUT);
+    pinMode(BUTTON_PIN, INPUT_PULLUP);
 #endif
     pinMode(POWER_PIN, OUTPUT);
 
