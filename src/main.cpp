@@ -18,7 +18,7 @@ void setup()
     // prepare STATUS_PIN
     pinMode(STATUS_PIN, OUTPUT);
     pinMode(ERROR_PIN, OUTPUT);
-    pinMode(BUTTON_PIN, INPUT);
+    pinMode(BUTTON_PIN, BUTTON_MODE);
     pinMode(POWER_PIN, OUTPUT);
 
     // Clean up

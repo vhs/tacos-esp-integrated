@@ -42,12 +42,16 @@
 #define NETWORK_DELAY 500
 
 // IO settings
+// Outputs
 #define STATUS_PIN D4
 #define ERROR_PIN D3
 #define POWER_PIN D2
 
+// Inputs
 #define BUTTON_PIN D1
+#define BUTTON_MODE INPUT_PULLUP
 
+// SPI
 #define SS_PIN D8
 #define RST_PIN D0
 

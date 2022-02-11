@@ -316,64 +316,44 @@ $EndComp
 $Comp
 L Device:R R2
 U 1 1 6202ADFF
-P 1500 1850
-F 0 "R2" V 1707 1850 50  0000 C CNN
-F 1 "R330" V 1616 1850 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 1430 1850 50  0001 C CNN
-F 3 "~" H 1500 1850 50  0001 C CNN
-	1    1500 1850
+P 1500 1600
+F 0 "R2" V 1707 1600 50  0000 C CNN
+F 1 "R330" V 1616 1600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1430 1600 50  0001 C CNN
+F 3 "~" H 1500 1600 50  0001 C CNN
+	1    1500 1600
 	1    0    0    -1  
 $EndComp
-Text GLabel 1500 2000 3    50   Input ~ 0
+Text GLabel 1500 1750 3    50   Input ~ 0
 GND
-Text GLabel 1500 1400 1    50   Input ~ 0
+Text GLabel 1500 1150 1    50   Input ~ 0
 5V
 $Comp
 L Device:LED D1
 U 1 1 6202F7AF
-P 1500 1550
-F 0 "D1" H 1493 1767 50  0000 C CNN
-F 1 "SYSTEM LED" H 1493 1676 50  0000 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 1500 1550 50  0001 C CNN
-F 3 "~" H 1500 1550 50  0001 C CNN
-	1    1500 1550
+P 1500 1300
+F 0 "D1" H 1493 1517 50  0000 C CNN
+F 1 "SYSTEM LED" H 1493 1426 50  0000 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 1500 1300 50  0001 C CNN
+F 3 "~" H 1500 1300 50  0001 C CNN
+	1    1500 1300
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Switch:SW_SPST SW1
 U 1 1 5F2894AE
-P 2550 1450
-F 0 "SW1" H 2550 1685 50  0000 C CNN
-F 1 "SW_ARM" H 2550 1594 50  0000 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 2550 1450 50  0001 C CNN
-F 3 "~" H 2550 1450 50  0001 C CNN
-	1    2550 1450
+P 2500 1550
+F 0 "SW1" H 2500 1785 50  0000 C CNN
+F 1 "SW_ARM" H 2500 1694 50  0000 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 2500 1550 50  0001 C CNN
+F 3 "~" H 2500 1550 50  0001 C CNN
+	1    2500 1550
 	0    -1   -1   0   
 $EndComp
-Text GLabel 2550 1250 1    50   Input ~ 0
-3V3
-$Comp
-L Device:R R1
-U 1 1 5F2A5D4B
-P 2550 1950
-F 0 "R1" V 2757 1950 50  0000 C CNN
-F 1 "R330" V 2666 1950 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 2480 1950 50  0001 C CNN
-F 3 "~" H 2550 1950 50  0001 C CNN
-	1    2550 1950
-	1    0    0    -1  
-$EndComp
-Text GLabel 2550 2100 3    50   Input ~ 0
+Text GLabel 2500 1750 3    50   Input ~ 0
 GND
-Text GLabel 2650 1750 2    50   Input ~ 0
+Text GLabel 2500 1350 1    50   Input ~ 0
 SWITCH
-Wire Wire Line
-	2550 1650 2550 1750
-Wire Wire Line
-	2550 1750 2650 1750
-Connection ~ 2550 1750
-Wire Wire Line
-	2550 1750 2550 1800
 Text GLabel 5100 1550 2    50   Input ~ 0
 RST
 Text GLabel 5100 1650 2    50   Input ~ 0
