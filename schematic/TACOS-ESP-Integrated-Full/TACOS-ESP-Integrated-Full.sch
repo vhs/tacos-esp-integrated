@@ -231,16 +231,12 @@ L Device:R R11
 U 1 1 61E9BA78
 P 9550 1800
 F 0 "R11" V 9757 1800 50  0000 C CNN
-F 1 "R4.7K" V 9666 1800 50  0000 C CNN
+F 1 "R1K" V 9666 1800 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 9480 1800 50  0001 C CNN
 F 3 "~" H 9550 1800 50  0001 C CNN
 	1    9550 1800
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	10000 1300 10000 1200
-Wire Wire Line
-	10000 1400 10000 1500
 Text GLabel 9400 1800 0    50   Input ~ 0
 ERROR_NET
 $Comp
@@ -314,15 +310,15 @@ $EndComp
 $Comp
 L Switch:SW_SPST SW1
 U 1 1 5F2894AE
-P 2500 1550
-F 0 "SW1" H 2500 1785 50  0000 C CNN
-F 1 "SW_ARM" H 2500 1694 50  0000 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 2500 1550 50  0001 C CNN
-F 3 "~" H 2500 1550 50  0001 C CNN
-	1    2500 1550
+P 2500 1250
+F 0 "SW1" H 2500 1485 50  0000 C CNN
+F 1 "SW_ARM" H 2500 1394 50  0000 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 2500 1250 50  0001 C CNN
+F 3 "~" H 2500 1250 50  0001 C CNN
+	1    2500 1250
 	0    -1   -1   0   
 $EndComp
-Text GLabel 2500 1350 1    50   Input ~ 0
+Text GLabel 2750 1550 2    50   Input ~ 0
 SWITCH
 Text GLabel 5100 1550 2    50   Input ~ 0
 RST
@@ -342,27 +338,6 @@ Text GLabel 5100 2050 2    50   Input ~ 0
 SCK
 Text GLabel 5100 1950 2    50   Input ~ 0
 STATUS_NET
-$Comp
-L Device:D D5
-U 1 1 6204AA11
-P 10200 1350
-F 0 "D5" V 10154 1430 50  0000 L CNN
-F 1 "D" V 10245 1430 50  0000 L CNN
-F 2 "Diode_SMD:D_0603_1608Metric" H 10200 1350 50  0001 C CNN
-F 3 "~" H 10200 1350 50  0001 C CNN
-	1    10200 1350
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	10200 1200 10000 1200
-Connection ~ 10000 1200
-Wire Wire Line
-	10000 1200 10000 1150
-Wire Wire Line
-	10200 1500 10000 1500
-Connection ~ 10000 1500
-Wire Wire Line
-	10000 1500 10000 1600
 $Comp
 L Device:D D6
 U 1 1 6204CEAC
@@ -429,17 +404,6 @@ F 3 "http://www.fairchildsemi.com/ds/PN/PN2222A.pdf" H 9900 1800 50  0001 L CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Screw_Terminal_01x02 J3
-U 1 1 61E9BA87
-P 9800 1400
-F 0 "J3" V 9672 1480 50  0000 L CNN
-F 1 "Error Relay" V 9921 1378 50  0000 C TNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 9800 1400 50  0001 C CNN
-F 3 "~" H 9800 1400 50  0001 C CNN
-	1    9800 1400
-	-1   0    0    1   
-$EndComp
-$Comp
 L power:+5V #PWR?
 U 1 1 6205FF23
 P 1500 1150
@@ -464,12 +428,12 @@ $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 62063010
-P 2500 1750
-F 0 "#PWR?" H 2500 1500 50  0001 C CNN
-F 1 "GND" H 2505 1577 50  0000 C CNN
-F 2 "" H 2500 1750 50  0001 C CNN
-F 3 "" H 2500 1750 50  0001 C CNN
-	1    2500 1750
+P 2500 1950
+F 0 "#PWR?" H 2500 1700 50  0001 C CNN
+F 1 "GND" H 2505 1777 50  0000 C CNN
+F 2 "" H 2500 1950 50  0001 C CNN
+F 3 "" H 2500 1950 50  0001 C CNN
+	1    2500 1950
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -563,12 +527,12 @@ $EndComp
 $Comp
 L power:+5V #PWR?
 U 1 1 6206B0B2
-P 10000 1150
-F 0 "#PWR?" H 10000 1000 50  0001 C CNN
-F 1 "+5V" H 10015 1323 50  0000 C CNN
-F 2 "" H 10000 1150 50  0001 C CNN
-F 3 "" H 10000 1150 50  0001 C CNN
-	1    10000 1150
+P 10000 850
+F 0 "#PWR?" H 10000 700 50  0001 C CNN
+F 1 "+5V" H 10015 1023 50  0000 C CNN
+F 2 "" H 10000 850 50  0001 C CNN
+F 3 "" H 10000 850 50  0001 C CNN
+	1    10000 850 
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -648,4 +612,110 @@ F 3 "" H 7800 3800 50  0001 C CNN
 	1    7800 3800
 	1    0    0    -1  
 $EndComp
+$Comp
+L Switch:SW_SPST SW?
+U 1 1 6207595F
+P 1350 4950
+F 0 "SW?" H 1350 5185 50  0000 C CNN
+F 1 "SW_DEVICE_RESET" H 1350 5094 50  0000 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 1350 4950 50  0001 C CNN
+F 3 "~" H 1350 4950 50  0001 C CNN
+	1    1350 4950
+	0    -1   -1   0   
+$EndComp
+Text GLabel 1350 4750 1    50   Input ~ 0
+DEV_RST
+$Comp
+L power:GND #PWR?
+U 1 1 62075966
+P 1350 5150
+F 0 "#PWR?" H 1350 4900 50  0001 C CNN
+F 1 "GND" H 1355 4977 50  0000 C CNN
+F 2 "" H 1350 5150 50  0001 C CNN
+F 3 "" H 1350 5150 50  0001 C CNN
+	1    1350 5150
+	1    0    0    -1  
+$EndComp
+Text GLabel 4300 1550 0    50   Input ~ 0
+DEV_RST
+$Comp
+L power:+5V #PWR?
+U 1 1 6207B9A8
+P 2500 1050
+F 0 "#PWR?" H 2500 900 50  0001 C CNN
+F 1 "+5V" H 2515 1223 50  0000 C CNN
+F 2 "" H 2500 1050 50  0001 C CNN
+F 3 "" H 2500 1050 50  0001 C CNN
+	1    2500 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6207CC8D
+P 2500 1800
+F 0 "R?" V 2707 1800 50  0000 C CNN
+F 1 "R10K" V 2616 1800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2430 1800 50  0001 C CNN
+F 3 "~" H 2500 1800 50  0001 C CNN
+	1    2500 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 1650 2500 1550
+Wire Wire Line
+	2750 1550 2500 1550
+Connection ~ 2500 1550
+Wire Wire Line
+	2500 1550 2500 1450
+Wire Wire Line
+	10000 1500 10000 1600
+Wire Wire Line
+	10000 1400 10000 1500
+Connection ~ 10000 1500
+Wire Wire Line
+	10200 1500 10000 1500
+Wire Wire Line
+	10000 1200 10000 1150
+Wire Wire Line
+	10000 1300 10000 1200
+Connection ~ 10000 1200
+Wire Wire Line
+	10200 1200 10000 1200
+$Comp
+L Device:D D5
+U 1 1 6204AA11
+P 10200 1350
+F 0 "D5" V 10154 1430 50  0000 L CNN
+F 1 "D" V 10245 1430 50  0000 L CNN
+F 2 "Diode_SMD:D_0603_1608Metric" H 10200 1350 50  0001 C CNN
+F 3 "~" H 10200 1350 50  0001 C CNN
+	1    10200 1350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 62082DAF
+P 10000 1000
+F 0 "R?" V 10207 1000 50  0000 C CNN
+F 1 "R100" V 10116 1000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 9930 1000 50  0001 C CNN
+F 3 "~" H 10000 1000 50  0001 C CNN
+	1    10000 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Speaker LS?
+U 1 1 62083CEE
+P 9550 1400
+F 0 "LS?" H 9513 983 50  0000 C CNN
+F 1 "Error Speaker" H 9513 1074 50  0000 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 9550 1200 50  0001 C CNN
+F 3 "~" H 9540 1350 50  0001 C CNN
+	1    9550 1400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10000 1300 9750 1300
+Wire Wire Line
+	10000 1400 9750 1400
 $EndSCHEMATC
