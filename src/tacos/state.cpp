@@ -60,6 +60,7 @@ void applyState(unsigned long max_delay)
             setStatusLedOn();
             setToolArmed();
             setToolOn();
+            ledMultiBlink(ERROR_PIN, 3, 125);
             Serial.printf("NOTICE: Tool enabled\n");
             break;
         case STATE_TOOL_SAFE:
@@ -95,6 +96,7 @@ void applyState(unsigned long max_delay)
             ledMultiBlink(STATUS_PIN);
             unsetBlockRetry();
             Serial.printf("NOTICE: Error cleared\n");
+            update_state = STATE_IDLE;
             break;
         case STATE_AUTH_SUCCESS:
             Serial.printf("STATE: Authenticated\n");
@@ -142,14 +144,19 @@ void forceState(TACOS_STATES new_state, unsigned long max_delay)
     applyState(max_delay);
 }
 
-void setBlockRetry()
-{
-    block_retry = 1;
-}
-
 int getBlockRetry()
 {
     return block_retry;
+}
+
+bool isBlockRetry()
+{
+    return block_retry == 1;
+}
+
+void setBlockRetry()
+{
+    block_retry = 1;
 }
 
 void unsetBlockRetry()
@@ -157,17 +164,24 @@ void unsetBlockRetry()
     block_retry = 0;
 }
 
-void setToolArmed()
-{
-    tool_armed = 1;
-}
-
 int getToolArmed()
 {
     return tool_armed;
 }
 
+bool isToolArmed()
+{
+    return (tool_armed == 1);
+}
+
+void setToolArmed()
+{
+    Serial.println("setToolArmed");
+    tool_armed = 1;
+}
+
 void unsetToolArmed()
 {
+    Serial.println("unsetToolArmed");
     tool_armed = 0;
 }

@@ -4,21 +4,23 @@
 #include "tacos/state.h"
 #include "tacos/utils.h"
 
-#ifdef BUTTON_MODE
+#ifndef BUTTON_MODE
+#define BUTTON_PRESSED HIGH
+#define BUTTON_DEPRESSED LOW
+#else
 #define BUTTON_PRESSED (BUTTON_MODE == INPUT_PULLUP) ? LOW : HIGH
 #define BUTTON_DEPRESSED (BUTTON_MODE == INPUT_PULLUP) ? HIGH : LOW
-#else
-#define BUTTON_PRESSED LOW
-#define BUTTON_DEPRESSED HIGH
 #endif
+
+int button_status = BUTTON_DEPRESSED;
 
 void lockoutLoop()
 {
     // Get button status
-    int button_status = readInput(BUTTON_PIN);
+    button_status = readInput(BUTTON_PIN);
 
     // If the button is on, tool is unsafe and we're not blocked from trying, turn it on
-    if (button_status == BUTTON_PRESSED && getToolArmed() == 0 && getBlockRetry() == 0)
+    if ((button_status == BUTTON_PRESSED) && !isToolArmed() && !isBlockRetry())
     {
         if (latchInput(BUTTON_PIN) != BUTTON_PRESSED)
         {
@@ -56,7 +58,7 @@ void lockoutLoop()
     }
 
     // If button is off and the tool was on, switch it off
-    if (button_status == BUTTON_DEPRESSED && getToolArmed() == 1)
+    if ((button_status == BUTTON_DEPRESSED) && isToolArmed())
     {
         if (latchInput(BUTTON_PIN) != BUTTON_DEPRESSED)
         {
@@ -68,23 +70,25 @@ void lockoutLoop()
     }
 
     // If switch is off, tool is safe and retry is blocked, clear errors
-    if (button_status == BUTTON_DEPRESSED && getToolArmed() == 0 && getBlockRetry() == 1)
+    if ((button_status == BUTTON_DEPRESSED) && !isToolArmed() && isBlockRetry())
     {
         if (latchInput(BUTTON_PIN) != BUTTON_DEPRESSED)
         {
             return;
         }
+
         setState(STATE_CLEAR_TOOL_ERRORS);
         return;
     }
 
     // If switch is on, but we're blocked from retrying, set error
-    if (button_status == BUTTON_PRESSED && getToolArmed() == 0 && getBlockRetry() == 1)
+    if ((button_status == BUTTON_PRESSED) && !isToolArmed() && isBlockRetry())
     {
         if (latchInput(BUTTON_PIN) != BUTTON_PRESSED)
         {
             return;
         }
+
         setState(STATE_TOOL_ERROR);
         return;
     }

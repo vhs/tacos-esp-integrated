@@ -6,11 +6,11 @@
 
 time_t now;
 time_t rtc = RTC_UTC_TEST;
-timeval tv = {rtc, 0};
+timeval tv = { rtc, 0 };
 
 static esp8266::polledTimeout::periodicMs showTimeNow(5000);
 
-extern "C" int clock_gettime(clockid_t unused, struct timespec *tp);
+extern "C" int clock_gettime(clockid_t unused, struct timespec* tp);
 
 void showTime()
 {
@@ -32,11 +32,12 @@ void timeInit()
     now = time(nullptr);
     while (now < (RTC_UTC_TEST + 3600))
     {
-        delay(5000);
         Serial.print(".");
         now = time(nullptr);
         ledMultiBlink(ERROR_PIN, 1, 65);
+        delay(125);
     }
+    ledMultiBlink(ERROR_PIN, 1, 125);
     Serial.println("");
     struct tm timeinfo;
     gmtime_r(&now, &timeinfo);

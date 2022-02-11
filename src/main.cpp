@@ -15,15 +15,18 @@ void setup()
 
     Serial.printf("Booting node %s...\n", NODE_ID);
 
-    // prepare STATUS_PIN
+    // prepare pins
+    // Output
     pinMode(STATUS_PIN, OUTPUT);
     pinMode(ERROR_PIN, OUTPUT);
-#ifdef BUTTON_MODE
-    pinMode(BUTTON_PIN, BUTTON_MODE);
-#else
-    pinMode(BUTTON_PIN, INPUT_PULLUP);
-#endif
     pinMode(POWER_PIN, OUTPUT);
+
+    // Input
+#ifndef BUTTON_MODE
+    pinMode(BUTTON_PIN, INPUT);
+#else
+    pinMode(BUTTON_PIN, BUTTON_MODE);
+#endif
 
     // Clean up
     setToolOff();

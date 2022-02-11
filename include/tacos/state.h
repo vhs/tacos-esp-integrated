@@ -27,15 +27,19 @@ void forceState(TACOS_STATES new_state = STATE_IDLE, unsigned long max_delay = L
 TACOS_STATES getState();
 void setState(TACOS_STATES new_state = STATE_IDLE);
 
-void setBlockRetry();
-
 int getBlockRetry();
+
+bool isBlockRetry();
+
+void setBlockRetry();
 
 void unsetBlockRetry();
 
-void setToolArmed();
-
 int getToolArmed();
+
+bool isToolArmed();
+
+void setToolArmed();
 
 void unsetToolArmed();
 
