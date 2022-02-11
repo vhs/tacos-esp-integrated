@@ -23,7 +23,7 @@ void setup()
 
     // Input
 #ifndef BUTTON_MODE
-    pinMode(BUTTON_PIN, INPUT);
+    pinMode(BUTTON_PIN, INPUT_PULLUP);
 #else
     pinMode(BUTTON_PIN, BUTTON_MODE);
 #endif
