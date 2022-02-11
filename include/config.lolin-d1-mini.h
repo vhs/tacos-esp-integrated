@@ -4,7 +4,7 @@
 #include <TZ.h>
 
 #ifndef NODE_ID
-#define NODE_ID "vhs-lolin-test-1"
+#define NODE_ID "vhs-tacos-lolin-d1-mini-test-1"
 #endif
 
 // #define LOCKOUT
@@ -43,6 +43,7 @@
 #define POWER_PIN D8
 
 #define BUTTON_PIN D2
+// #define BUTTON_MODE INPUT
 
 #define SS_PIN D4
 #define RST_PIN D3
