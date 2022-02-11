@@ -18,7 +18,11 @@ void setup()
     // prepare STATUS_PIN
     pinMode(STATUS_PIN, OUTPUT);
     pinMode(ERROR_PIN, OUTPUT);
+#ifdef BUTTON_MODE
     pinMode(BUTTON_PIN, BUTTON_MODE);
+#else
+    pinMode(BUTTON_PIN, INPUT);
+#endif
     pinMode(POWER_PIN, OUTPUT);
 
     // Clean up
