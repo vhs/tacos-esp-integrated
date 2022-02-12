@@ -13,7 +13,7 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text GLabel 4450 4200 0    50   Input ~ 0
+Text GLabel 4450 3750 1    50   Input ~ 0
 RST
 $Comp
 L Device:LED D3
@@ -42,105 +42,103 @@ ERROR_NET
 $Comp
 L Connector_Generic:Conn_01x08 J2
 U 1 1 5F285F64
-P 5250 3900
-F 0 "J2" H 5330 3892 50  0000 L CNN
-F 1 "MRC522" H 5330 3801 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 5250 3900 50  0001 C CNN
-F 3 "~" H 5250 3900 50  0001 C CNN
-	1    5250 3900
-	1    0    0    -1  
+P 4750 4550
+F 0 "J2" H 4830 4542 50  0000 L CNN
+F 1 "MRC522" H 4830 4451 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 4750 4550 50  0001 C CNN
+F 3 "~" H 4750 4550 50  0001 C CNN
+	1    4750 4550
+	0    1    1    0   
 $EndComp
-Text GLabel 4450 3900 0    50   Input ~ 0
+Text GLabel 4750 3750 1    50   Input ~ 0
 MISO
-Text GLabel 4450 3800 0    50   Input ~ 0
+Text GLabel 4850 3750 1    50   Input ~ 0
 MOSI
-Text GLabel 4450 4100 0    50   Input ~ 0
+Text GLabel 4550 3750 1    50   Input ~ 0
 GND
-Text GLabel 4450 4300 0    50   Input ~ 0
-3V3
-Text GLabel 4450 3700 0    50   Input ~ 0
+Text GLabel 4950 3750 1    50   Input ~ 0
 SCK
-Text GLabel 4450 3600 0    50   Input ~ 0
+Text GLabel 5050 3750 1    50   Input ~ 0
 SS
 $Comp
 L Device:R R5
 U 1 1 600954A4
-P 4750 3600
-F 0 "R5" V 4753 3596 50  0000 C CNN
-F 1 "R100" V 4866 3600 50  0001 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 4680 3600 50  0001 C CNN
-F 3 "~" H 4750 3600 50  0001 C CNN
-	1    4750 3600
-	0    -1   -1   0   
+P 5050 4050
+F 0 "R5" V 5053 4046 50  0000 C CNN
+F 1 "R100" V 5166 4050 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4980 4050 50  0001 C CNN
+F 3 "~" H 5050 4050 50  0001 C CNN
+	1    5050 4050
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R6
 U 1 1 6009B066
-P 4750 3700
-F 0 "R6" V 4753 3696 50  0000 C CNN
-F 1 "R100" V 4866 3700 50  0001 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 4680 3700 50  0001 C CNN
-F 3 "~" H 4750 3700 50  0001 C CNN
-	1    4750 3700
-	0    -1   -1   0   
+P 4950 4050
+F 0 "R6" V 4953 4046 50  0000 C CNN
+F 1 "R100" V 5066 4050 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4880 4050 50  0001 C CNN
+F 3 "~" H 4950 4050 50  0001 C CNN
+	1    4950 4050
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R7
 U 1 1 6009B537
-P 4750 3800
-F 0 "R7" V 4753 3796 50  0000 C CNN
-F 1 "R100" V 4866 3800 50  0001 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 4680 3800 50  0001 C CNN
-F 3 "~" H 4750 3800 50  0001 C CNN
-	1    4750 3800
-	0    -1   -1   0   
+P 4850 4050
+F 0 "R7" V 4853 4046 50  0000 C CNN
+F 1 "R100" V 4966 4050 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4780 4050 50  0001 C CNN
+F 3 "~" H 4850 4050 50  0001 C CNN
+	1    4850 4050
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R8
 U 1 1 6009B9F3
-P 4750 3900
-F 0 "R8" V 4753 3896 50  0000 C CNN
-F 1 "R100" V 4866 3900 50  0001 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 4680 3900 50  0001 C CNN
-F 3 "~" H 4750 3900 50  0001 C CNN
-	1    4750 3900
-	0    -1   -1   0   
+P 4750 4050
+F 0 "R8" V 4753 4046 50  0000 C CNN
+F 1 "R100" V 4866 4050 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4680 4050 50  0001 C CNN
+F 3 "~" H 4750 4050 50  0001 C CNN
+	1    4750 4050
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R9
 U 1 1 6009BE5B
-P 4750 4200
-F 0 "R9" V 4753 4196 50  0000 C CNN
-F 1 "R100" V 4866 4200 50  0001 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 4680 4200 50  0001 C CNN
-F 3 "~" H 4750 4200 50  0001 C CNN
-	1    4750 4200
-	0    -1   -1   0   
+P 4450 4050
+F 0 "R9" V 4453 4046 50  0000 C CNN
+F 1 "R100" V 4566 4050 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4380 4050 50  0001 C CNN
+F 3 "~" H 4450 4050 50  0001 C CNN
+	1    4450 4050
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4450 3600 4600 3600
+	5050 3750 5050 3900
 Wire Wire Line
-	4900 3600 5050 3600
+	5050 4200 5050 4350
 Wire Wire Line
-	4900 3700 5050 3700
+	4950 4200 4950 4350
 Wire Wire Line
-	4900 3800 5050 3800
+	4850 4200 4850 4350
 Wire Wire Line
-	4900 3900 5050 3900
+	4750 4200 4750 4350
 Wire Wire Line
-	4600 3900 4450 3900
+	4750 3900 4750 3750
 Wire Wire Line
-	4450 3800 4600 3800
+	4850 3750 4850 3900
 Wire Wire Line
-	4450 3700 4600 3700
+	4950 3750 4950 3900
 Wire Wire Line
-	4450 4200 4600 4200
+	4450 3750 4450 3900
 Wire Wire Line
-	4900 4200 5050 4200
+	4450 4200 4450 4350
 Wire Wire Line
-	5050 4100 4450 4100
+	4550 4350 4550 3750
 Wire Wire Line
-	4450 4300 5050 4300
+	4350 3750 4350 4350
 $Comp
 L Transistor_BJT:PN2222A Q1
 U 1 1 61E751C4
@@ -684,42 +682,53 @@ U 1 1 62077C2E
 P 10200 4700
 F 0 "H1" H 10300 4746 50  0000 L CNN
 F 1 "MountingHole" H 10300 4655 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.7mm_M2.5_Pad" H 10200 4700 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 10200 4700 50  0001 C CNN
 F 3 "~" H 10200 4700 50  0001 C CNN
 	1    10200 4700
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H?
+L Mechanical:MountingHole H2
 U 1 1 6207BEF2
 P 10200 4950
-F 0 "H?" H 10300 4996 50  0000 L CNN
+F 0 "H2" H 10300 4996 50  0000 L CNN
 F 1 "MountingHole" H 10300 4905 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.7mm_M2.5_Pad" H 10200 4950 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 10200 4950 50  0001 C CNN
 F 3 "~" H 10200 4950 50  0001 C CNN
 	1    10200 4950
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H?
+L Mechanical:MountingHole H3
 U 1 1 6207C17A
 P 10200 5200
-F 0 "H?" H 10300 5246 50  0000 L CNN
+F 0 "H3" H 10300 5246 50  0000 L CNN
 F 1 "MountingHole" H 10300 5155 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.7mm_M2.5_Pad" H 10200 5200 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 10200 5200 50  0001 C CNN
 F 3 "~" H 10200 5200 50  0001 C CNN
 	1    10200 5200
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H?
+L Mechanical:MountingHole H4
 U 1 1 6207C2C3
 P 10200 5450
-F 0 "H?" H 10300 5496 50  0000 L CNN
+F 0 "H4" H 10300 5496 50  0000 L CNN
 F 1 "MountingHole" H 10300 5405 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.7mm_M2.5_Pad" H 10200 5450 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 10200 5450 50  0001 C CNN
 F 3 "~" H 10200 5450 50  0001 C CNN
 	1    10200 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 620F1279
+P 4350 3750
+F 0 "#PWR?" H 4350 3600 50  0001 C CNN
+F 1 "+3V3" H 4365 3923 50  0000 C CNN
+F 2 "" H 4350 3750 50  0001 C CNN
+F 3 "" H 4350 3750 50  0001 C CNN
+	1    4350 3750
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
