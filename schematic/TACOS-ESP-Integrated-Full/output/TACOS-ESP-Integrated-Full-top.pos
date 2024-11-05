@@ -1,0 +1,23 @@
+### Module positions - created on 02/12/22 21:01:54 ###
+### Printed by Pcbnew version kicad (5.1.6)-1
+## Unit = mm, Angle = deg.
+## Side : top
+# Ref     Val         Package                 PosX       PosY       Rot  Side
+D5        D           D_0603_1608Metric    87.5912   -39.4502    0.0000  top
+D6        D           D_0603_1608Metric    73.9580   -69.7992  180.0000  top
+R2        R330        R_0603_1608Metric    36.6201   -69.6468  180.0000  top
+R3        R330        R_0603_1608Metric    73.4433   -37.3928  180.0000  top
+R4        R330        R_0603_1608Metric    65.4490   -69.6976  180.0000  top
+R5        R100        R_0603_1608Metric    26.5000   -37.7500  180.0000  top
+R6        R100        R_0603_1608Metric    26.5000   -54.5000  180.0000  top
+R7        R100        R_0603_1608Metric    26.5000   -52.0000  180.0000  top
+R8        R100        R_0603_1608Metric    26.5000   -49.2500  180.0000  top
+R9        R100        R_0603_1608Metric    26.5000   -41.7500  180.0000  top
+R10       R4.7K       R_0603_1608Metric    75.7500   -65.0000   90.0000  top
+R11       R1K         R_0603_1608Metric    84.5432   -44.1746  180.0000  top
+R12       R330        R_0603_1608Metric    87.0136   -66.7512    0.0000  top
+R13       R330        R_0603_1608Metric    86.9120   -69.7484    0.0000  top
+R14       R1K         R_0603_1608Metric    71.2082   -44.8604  270.0000  top
+R15       R1K         R_0603_1608Metric    64.7500   -65.0000   90.0000  top
+SW3       SW_DEV_RST  SW_SPST_PTS645       44.5000   -61.0000    0.0000  top
+## End
